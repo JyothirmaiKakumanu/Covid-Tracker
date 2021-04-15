@@ -1,0 +1,37 @@
+.Header{
+    height: 70px;
+    width: 68%;
+    background-color: rgba(18,98,255,0.8);
+    margin: auto;
+    margin-top: 20px;
+    padding: 0 15px;
+}
+
+.Heading-information:nth-child(1){
+    width: 25% !important;
+}
+.Heading-information:nth-child(2){
+    width: 25% !important;
+}
+
+.Heading-information:nth-child(3){
+    width:25% !important;
+}
+
+.Heading-information:nth-child(4){
+    width:  10% !important;
+    /* padding: 20px; */
+}
+
+.Heading-information{
+    color: black;
+    float: left;
+    height: 100%;
+    width: 20%;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    font-size: 1.2rem;
+    font-family: 'Nunito';
+}
