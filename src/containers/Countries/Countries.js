@@ -22,7 +22,7 @@ export default class Countries extends Component {
 
         var countryDetails = data.data.Countries;
         countryDetails = ArraySort(countryDetails,'TotalConfirmed',{reverse:true})
-        // console.log("Countries",countryDetails);
+
         this.setState({
             countryDetails: countryDetails,
             status: true,
@@ -34,7 +34,7 @@ export default class Countries extends Component {
         const value = e.target.value;
         let sortbyReverse = true;
 
-        if(value=="Highest"){
+        if(value==="Highest"){
             sortbyReverse=true;
         }else{
             sortbyReverse= false;
@@ -74,7 +74,7 @@ export default class Countries extends Component {
             })
         }
 
-        if(value.length==0){
+        if(value.length===0){
             this.setState({
                 selectedData: this.state.countryDetails,
             })
@@ -115,7 +115,7 @@ export default class Countries extends Component {
             <div className="countries-stats">
                 <h2 className="countries-stats-heading">Countries Stats</h2>
                 <div className="filtering">
-                    <input type="text" placeholder="Enter Country name" onChange={this.searchCountry}/>
+                    <input type="text" placeholder="Country name" onChange={this.searchCountry}/>
                     <select className="sort-by" onChange={this.changeSortValue}>
                         <option>Highest</option>
                         <option>Lowest</option>
